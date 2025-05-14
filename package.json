@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "start-ssl": "ng serve --host 0.0.0.0 --port 4200 --ssl --ssl-key ./ssl/private.key --ssl-cert ./ssl/server.crt"
+    "start-ssl": "ng serve --host 0.0.0.0 --port 4200 --ssl --ssl-key ./ssl/private.key --ssl-cert ./ssl/server.crt",
+    "build-gh": "ng deploy --base-href=https://meistter.github.io/app-prueba-ssl/"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +19,7 @@
     "@angular/platform-browser": "^19.2.0",
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/router": "^19.2.0",
+    "angular-cli-ghpages": "^2.0.3",
     "eruda": "^3.4.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
