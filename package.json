@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "start-ssl": "ng serve --host 0.0.0.0 --port 4200 --ssl --ssl-key ./ssl/private.key --ssl-cert ./ssl/server.crt",
-    "build-gh": "ng deploy --base-href=https://meistter.github.io/app-prueba-ssl/"
+    "build-gh": "ng deploy --base-href=https://meistter.github.io/app-prueba-ssl/",
+    "build-ssl" : "ssh -R 80:localhost:4200 localhost.run"
   },
   "private": true,
   "dependencies": {
