@@ -4,7 +4,7 @@ import eruda from 'eruda';
 eruda.init();
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -42,6 +42,9 @@ export class AppComponent {
           signal: ac.signal,
         } as any)
         .then((otp: any) => {
+          console.log('otp:',otp);
+          console.log('otp:',otp.code);
+          
           input.value = otp.code;
           // if (form) form.submit();
         })
